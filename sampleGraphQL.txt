@@ -1,0 +1,23 @@
+This will return only items from the Crew table, etc
+Try it out in GraphiQL! http://localhost:8000/___graphql
+
+{
+	allAirtable(filter: {table: {eq: "Crew"}}) {
+	  edges {
+	    node {
+	      id
+        table
+        data {
+        	Name
+          Bio
+          LinkedinUrl
+          Photo{
+            url
+          }
+          GithubID
+          Media
+        }
+	    }
+	  }
+	}
+}
