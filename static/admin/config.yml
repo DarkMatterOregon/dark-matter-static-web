@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
   repo: DarkMatterOregon/dark-matter-static-web
 
@@ -16,9 +16,13 @@ collections:
       - { label: 'Team Member', name: 'title', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
   
-  - name: 'home'
-    label: 'Home Page'
-    folder: 'src/home'
-    slug: '{{slug}}'
-    fields: 
-      - {label: 'Home Page', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: "src/pages/home/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
