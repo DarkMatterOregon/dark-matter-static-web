@@ -4,7 +4,7 @@ backend:
   repo: DarkMatterOregon/dark-matter-static-web
 
 media_folder: static/img
-public_folder: img
+public_folder: /img
 
 collections:
   - name: 'team'
@@ -15,4 +15,3 @@ collections:
     fields:
       - { label: 'Team Member', name: 'title', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
-      # check netlifycms.org for more widget types
