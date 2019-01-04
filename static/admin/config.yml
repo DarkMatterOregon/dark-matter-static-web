@@ -15,3 +15,10 @@ collections:
     fields:
       - { label: 'Team Member', name: 'title', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
+  
+  - name: 'home'
+    label: 'Home Page'
+    folder: 'src/home'
+    slug: '{{slug}}'
+    fields: 
+      - {label: 'Home Page', name: 'body', widget: 'markdown' }
