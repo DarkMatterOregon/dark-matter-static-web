@@ -15,6 +15,9 @@ collections:
     fields:
       - { label: 'Team Member', name: 'title', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
+      - { label: 'Headshot', name: 'headshot', widget: 'image' }
+      - { label: 'LinkedIn ID', name: 'linkedinid', widget: 'string' }
+      - { label: 'GetHub ID', name: 'githubid', widget: 'string' }
   
   - name: 'pages'
     label: 'Pages'
