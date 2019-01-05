@@ -18,13 +18,34 @@ collections:
       - { label: 'Headshot', name: 'headshot', widget: 'image' }
       - { label: 'LinkedIn ID', name: 'linkedinid', widget: 'string' }
       - { label: 'GetHub ID', name: 'githubid', widget: 'string' }
-  
+
   - name: 'pages'
     label: 'Pages'
     files:
-      - file: "src/pages/home/index.md"
-        label: "Home"
-        name: "home"
+      - file: 'src/pages/home/index.md'
+        label: 'Home'
+        name: 'home'
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/pages/crew/index.md'
+        label: 'Crew'
+        name: 'crew'
+        fields:
+          - {
+              label: Main,
+              name: main,
+              widget: list,
+              fields:
+                [
+                  { label: 'Team Member', name: 'title', widget: 'string' },
+                  { label: 'Bio', name: 'bio', widget: 'markdown' },
+                  { label: 'Headshot', name: 'headshot', widget: 'image' },
+                  {
+                    label: 'LinkedIn ID',
+                    name: 'linkedinid',
+                    widget: 'string',
+                  },
+                  { label: 'GetHub ID', name: 'githubid', widget: 'string' },
+                ],
+            }
