@@ -33,19 +33,15 @@ collections:
         name: 'crew'
         fields:
           - {
-              label: Main,
-              name: main,
+              label: Crew,
+              name: crew,
               widget: list,
               fields:
                 [
                   { label: 'Team Member', name: 'title', widget: 'string' },
                   { label: 'Bio', name: 'bio', widget: 'markdown' },
                   { label: 'Headshot', name: 'headshot', widget: 'image' },
-                  {
-                    label: 'LinkedIn ID',
-                    name: 'linkedinid',
-                    widget: 'string',
-                  },
+                  { label: 'LinkedIn ID', name: 'linkedinid', widget: 'string' },
                   { label: 'GetHub ID', name: 'githubid', widget: 'string' },
                 ],
             }
