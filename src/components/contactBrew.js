@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Formik, Field } from 'formik'
+import { Formik, Field, Form } from 'formik'
 
-export default class ContactBrew extends Component {
+class ContactBrew extends Component {
   render() {
     return (
       <Formik
@@ -67,3 +67,5 @@ export default class ContactBrew extends Component {
     )
   }
 }
+
+export default ContactBrew

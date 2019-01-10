@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import ContactBrew from '../components/contactBrew' 
 
-export default class CraftBrew extends Component {
+class CraftBrew extends Component {
   render() {
     return (
       <Layout>
@@ -13,3 +14,5 @@ export default class CraftBrew extends Component {
     )
   }
 }
+
+export default CraftBrew
