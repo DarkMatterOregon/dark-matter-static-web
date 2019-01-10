@@ -10,7 +10,7 @@ class ContactBrew extends Component {
         }}
         validationSchema
         onSubmit={async function(values, actions) {
-          const response = await (await fetch('/.netlify/functions/airtable', {
+          const response = await (await fetch('/.netlify/functions/airtable-api-proxy', {
             method: 'PATCH',
             headers: {
               'Content-type': 'application/json',
