@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
   repo: DarkMatterOregon/dark-matter-static-web
 
@@ -45,3 +45,18 @@ collections:
                   { label: 'GetHub ID', name: 'githubid', widget: 'string' },
                 ],
             }
+      - file: 'src/pages/clients/index.md'
+        label: 'Clients'
+        name: 'clients' 
+        fields: 
+          - {
+              label: Client,
+              name: client,
+              widget: list,
+              fields:
+                [
+                  { label: 'Company', name: 'company', widget: 'string'},
+                  { label: 'Description of Work', name: 'description', widget: 'string' },
+                  { label: 'Company Logo', name: 'logo', widget: 'image' },
+                ],
+          }
