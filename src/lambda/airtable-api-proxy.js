@@ -2,7 +2,7 @@ const Airtable = require('airtable')
 
 const saveContact = async data => {
   return new Promise((resolve, reject) => {
-    const { AIRTABLE_BASE_ID, GATSBY_AIRTABLE_API_KEY } = process.env
+    const { AIRTABLE_BASE_ID, GATSBY_AIRTABLE_API_KEY } = process.env.NODE_ENV
 
     Airtable.configure({
       GATSBY_AIRTABLE_API_KEY,
