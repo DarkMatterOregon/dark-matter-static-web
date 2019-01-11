@@ -10,13 +10,17 @@ class ContactBrew extends Component {
         }}
         validationSchema
         onSubmit={async function(values, actions) {
-          const response = await (await fetch('/.netlify/functions/airtable-api-proxy', {
-            method: 'PATCH',
-            headers: {
-              'Content-type': 'application/json',
-            },
-            body: JSON.stringify(values),
-          })).json()
+          console.log(values)
+          const response = await (await fetch(
+            '/.netlify/functions/airtable-api-proxy',
+            {
+              method: 'PATCH',
+              headers: {
+                'Content-type': 'application/json',
+              },
+              body: JSON.stringify(values),
+            }
+          )).json()
           console.log(response)
         }}
         render={({
@@ -31,13 +35,12 @@ class ContactBrew extends Component {
           validate,
         }) => (
           <Form onSubmit={handleSubmit} onSubmitCapture={handleSubmit}>
-    
             <label htmlFor="name">Full Name:</label>
             <Field
               className={touched.name && errors.name ? 'invalid' : ''}
               id="name"
               type="text"
-              name="name"
+              name="Name"
               required
             />
             <label htmlFor="email">Email:</label>
@@ -45,19 +48,39 @@ class ContactBrew extends Component {
               className={touched.email && errors.email ? 'invalid' : ''}
               id="email"
               type="email"
-              name="email"
+              name="Email"
               required
             />
             {/* <ErrorMessage className="error" name="email" component={Error} /> */}
-            <label htmlFor="message">Anything you would like us to know?</label>
+            <label htmlFor="needs">What are your needs?</label>
             <Field
               className={touched.message && errors.message ? 'invalid' : ''}
-              id="message"
+              id="needs"
               component="textarea"
-              name="message"
-              placeholder="I love learning! ;)"
+              name="Needs"
+              placeholder=""
               required
             />
+            <label htmlFor="phone">Phone of contact person:</label>
+            <Field
+              className={touched.Phone && errors.Phone ? 'invalid' : ''}
+              id="phone"
+              type="tel"
+              name="Phone"
+              placeholder="optional"
+            />
+            <label htmlFor="company">Company Name</label>
+            <Field
+              className={
+                touched['Company Name'] && errors['Company Name']
+                  ? 'invalid'
+                  : ''
+              }
+              id="company"
+              type="text"
+              name="Company Name"
+            />
+
             <button type="submit" disabled={isSubmitting || !isValid}>
               Submit
             </button>
