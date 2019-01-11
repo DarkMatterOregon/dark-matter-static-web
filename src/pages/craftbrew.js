@@ -9,7 +9,10 @@ class CraftBrew extends Component {
       <Layout>
         <SEO title="Craft Brew Conference" keywords={['craft', 'brew', 'small batch', 'home brew', 'software', 'development',]} />
         <h2>Let's talk about how we can make small batch, craft brewed software for your unique pallet</h2>
+        <div style={{transition: '.5s ease'}}>
         <ContactBrew />
+
+        </div>
       </Layout>
     )
   }
