@@ -8,7 +8,7 @@ const NavList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 600px;
+  max-width: 700px;
   padding: 0;
   padding-bottom: 1rem;
 
@@ -33,7 +33,7 @@ const StyledLink = styled(Link)`
 `
 const ListLink = props => (
   <NavLi>
-    <StyledLink href={props.to}>{props.children}</StyledLink>
+    <StyledLink to={props.to}>{props.children}</StyledLink>
   </NavLi>
 )
 
@@ -41,7 +41,11 @@ const Navbar = () => (
   <div>
     <NavList>
       <ListLink to="/">Home</ListLink>
-      <ListLink to="/craftBrew">Craft Brew Fest</ListLink>
+      <ListLink to="/about">About</ListLink>
+      <ListLink to="/specialties">Specialties</ListLink>
+      <ListLink to="/work">Our Work</ListLink>
+      <ListLink to="/media">Media</ListLink>
+      <ListLink to="/craftbrew/">Craft Brew Fest</ListLink>
     </NavList>
   </div>
 )
