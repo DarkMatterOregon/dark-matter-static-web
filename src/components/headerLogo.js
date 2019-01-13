@@ -14,21 +14,25 @@ import Img from 'gatsby-image'
  */
 
 const HeaderLogo = () => (
-
   <StaticQuery
     query={graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+      query {
+        placeholderImage: file(relativePath: { eq: "logo.png" }) {
+          childImageSharp  {
+            fixed {
+              ...GatsbyImageSharpFixed_noBase64
+            }
           }
         }
       }
-    }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+    render={data => (
+      <Img
+        fixed={data.placeholderImage.childImageSharp.fixed}
+        critical={true}
+        
+      />
+    )}
   />
-
 )
 export default HeaderLogo
