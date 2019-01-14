@@ -7,28 +7,40 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'team'
-    label: 'Team'
-    folder: 'src/team'
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - { label: 'Team Member', name: 'title', widget: 'string' }
-      - { label: 'Bio', name: 'bio', widget: 'markdown' }
-      - { label: 'Headshot', name: 'headshot', widget: 'image' }
-      - { label: 'LinkedIn ID', name: 'linkedinid', widget: 'string' }
-      - { label: 'GetHub ID', name: 'githubid', widget: 'string' }
+  # - name: 'team'
+  #   label: 'Team'
+  #   folder: 'src/team'
+  #   create: true
+  #   slug: '{{slug}}'
+  #   fields:
+  #     - { label: 'Team Member', name: 'title', widget: 'string' }
+  #     - { label: 'Bio', name: 'bio', widget: 'markdown' }
+  #     - { label: 'Headshot', name: 'headshot', widget: 'image' }
+  #     - { label: 'LinkedIn ID', name: 'linkedinid', widget: 'string' }
+  #     - { label: 'GetHub ID', name: 'githubid', widget: 'string' }
 
   - name: 'pages'
     label: 'Pages'
     files:
-      - file: 'src/pages/home/index.md'
+      - file: 'src/markdown/home.md'
         label: 'Home'
         name: 'home'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/crew/index.md'
+      - file: 'src/markdown/about.md'
+        label: 'About'
+        name: 'about'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/markdown/specialties.md'
+        label: 'Specialties'
+        name: 'specialties'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/markdown/crew.md'
         label: 'Crew'
         name: 'crew'
         fields:
@@ -45,7 +57,7 @@ collections:
                   { label: 'GetHub ID', name: 'githubid', widget: 'string' },
                 ],
             }
-      - file: 'src/pages/clients/index.md'
+      - file: 'src/markdown/clients.md'
         label: 'Clients'
         name: 'clients' 
         fields: 
@@ -58,5 +70,6 @@ collections:
                   { label: 'Company', name: 'company', widget: 'string'},
                   { label: 'Description of Work', name: 'description', widget: 'string' },
                   { label: 'Company Logo', name: 'logo', widget: 'image' },
+                  { lable: 'Website', name: 'website', widet: 'string' },
                 ],
           }

@@ -1,4 +1,5 @@
 ---
+title: Crew
 crew:
   - bio: Web developer
     githubid: McKelveygreg
