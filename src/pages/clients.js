@@ -17,13 +17,14 @@ const ClientPage = () => (
     <StaticQuery
       query={graphql`
         {
-          markdownRemark(frontmatter: { title: { eq: "Our Work" } }) {
+          clients: markdownRemark(frontmatter: { title: { eq: "Our Work" } }) {
             frontmatter {
               title
               client {
                 company
                 description
                 logo
+                website
               }
             }
           }
@@ -31,7 +32,7 @@ const ClientPage = () => (
       `}
       render={data => (
         <Clients>
-          {data.markdownRemark.frontmatter.client.map(client => (
+          {data.clients.frontmatter.client.map(client => (
             <ClientCard {...client} key={client.company} />
           ))}
         </Clients>

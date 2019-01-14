@@ -1,6 +1,4 @@
----
-title: About
----
+
 ## Hipster Ipsum
 
 Lorem ipsum dolor amet microdosing wayfarers kickstarter occupy umami vaporware lumbersexual viral readymade synth vexillologist mumblecore. Occupy pork belly put a bird on it echo park health goth bushwick everyday carry. Messenger bag chillwave squid blue bottle locavore. Kitsch tattooed four loko, microdosing hoodie sartorial offal farm-to-table. Farm-to-table trust fund ethical bicycle rights etsy. Taiyaki intelligentsia keytar dreamcatcher, normcore jean shorts la croix ugh ethical twee XOXO lomo.

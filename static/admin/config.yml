@@ -31,6 +31,7 @@ collections:
       - file: 'src/markdown/about.md'
         label: 'About'
         name: 'about'
+        title: About
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -59,7 +60,8 @@ collections:
             }
       - file: 'src/markdown/clients.md'
         label: 'Clients'
-        name: 'clients' 
+        name: 'clients'
+        title: Our Work 
         fields: 
           - {
               label: Client,

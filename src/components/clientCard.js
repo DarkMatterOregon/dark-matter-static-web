@@ -4,8 +4,10 @@ import styled from 'styled-components'
 const ClientCard = (props, {className}) => {
   return (
     <div className={props.className}>
-      <h2>{props.company}</h2>
-      <img src={props.logo} alt={props.company} />
+      <a href={props.website}>
+        <h2>{props.company}</h2>
+        <img src={props.logo} alt={props.company} />
+      </a>
       <p>{props.description}</p>
     </div>
   )
