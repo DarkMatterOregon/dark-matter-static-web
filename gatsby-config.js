@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Dark Matter Consulting`,
-    description: `Let's talk about how we can make small batch, craft brewed software for your unique palette`,
+    description: `Let's talk about how we can make small batch, craft brewed software for your unique palate`,
     author: `@mckelveygreg`,
   },
   plugins: [
