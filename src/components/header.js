@@ -1,41 +1,33 @@
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 import Navbar from './navbar'
 import HeaderLogo from './headerLogo'
 import BackgroundImage from './backgroundImage'
+import { elevation } from '../utilities'
+import styled from 'styled-components'
+
+const StyledHeader = styled.header`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  ${elevation[2]};
+  text-align: center;
+`
+const StyledLogo = styled(HeaderLogo)`
+  max-height: 40vh;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+`
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      margin: `0 auto`,
-      maxWidth: 960,
-      padding: `1.45rem 1.0875rem`,
-    }}
-  >
+  <StyledHeader>
     <BackgroundImage />
-    <h1 style={{ margin: 0, textAlign: 'center' }}>
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        {/* {siteTitle} */}
-        <HeaderLogo />
-      </Link>
-    </h1>
+    <Link to="/" >
+      <StyledLogo />
+    </Link>
     <Navbar />
-  </div>
+  </StyledHeader>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

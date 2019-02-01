@@ -8,9 +8,9 @@ const BackgroundSection = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "black_hole_milkyway_header.jpg" }) {
+        desktop: file(relativePath: { eq: "inverse-helix-nebula-11155.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 3000) {
+            fluid(quality: 100, maxWidth: 2500) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -30,8 +30,9 @@ const BackgroundSection = ({ className, children }) => (
             left: 0,
             top: 0,
             width: '100%',
-            height: '40%',
-            
+            height: '100%',
+            zIndex: -1,
+            background: "white"
           }}
         />
       )

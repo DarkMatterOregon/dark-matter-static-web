@@ -13,7 +13,7 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const HeaderLogo = () => (
+const HeaderLogo = ({className}) => (
   <StaticQuery
     query={graphql`
       query {
@@ -30,7 +30,7 @@ const HeaderLogo = () => (
       <Img
         fixed={data.placeholderImage.childImageSharp.fixed}
         critical={true}
-        
+        className={className}
       />
     )}
   />

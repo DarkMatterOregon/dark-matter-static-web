@@ -2,7 +2,7 @@
 templateKey: home-page
 title: Home Page
 ---
-![](/img/black_hole_milkyway_header.jpg)
+<!-- ![](/img/black_hole_milkyway_header.jpg) -->
 
 ## WHO WE ARE
 
