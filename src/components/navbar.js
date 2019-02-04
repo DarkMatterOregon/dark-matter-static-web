@@ -11,6 +11,7 @@ const NavList = styled.ul`
   max-width: 700px;
   padding: 0;
   padding-bottom: 1rem;
+  font-family: Montserrat;
 
   @media (max-width: 800px) {
     flex-direction: column;

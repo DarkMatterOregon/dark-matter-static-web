@@ -55,6 +55,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Montserrat'],
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
