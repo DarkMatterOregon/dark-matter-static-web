@@ -13,14 +13,14 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const HeaderLogo = ({className}) => (
+const HeaderLogo = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
         placeholderImage: file(relativePath: { eq: "logo.png" }) {
-          childImageSharp  {
-            fixed {
-              ...GatsbyImageSharpFixed_noBase64
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -28,7 +28,7 @@ const HeaderLogo = ({className}) => (
     `}
     render={data => (
       <Img
-        fixed={data.placeholderImage.childImageSharp.fixed}
+        fluid={data.placeholderImage.childImageSharp.fluid}
         critical={true}
         className={className}
       />

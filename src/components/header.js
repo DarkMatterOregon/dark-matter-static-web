@@ -4,34 +4,58 @@ import Navbar from './navbar'
 import HeaderLogo from './headerLogo'
 import BackgroundImage from './backgroundImage'
 import { elevation } from '../utilities'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const StyledHeader = styled.header`
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  flex-direction: column;
+  grid-template-columns: 1fr 4fr;
+
   ${elevation[2]};
-  text-align: center;
-  height: 100vh;
+  align-items: end;
+  /* height: 100vh; */
   position: relative;
   /* ^^to contain the background image^^ */
   background-image: radial-gradient(white -50%, transparent 50%);
+
+  ${({ home }) =>
+    home &&
+    css`
+      height: 100vh;
+      align-content: center;
+      grid-template-columns: 1fr;
+
+      @media only screen and (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+    `}
 `
 const StyledLogo = styled(HeaderLogo)`
-  max-height: 40vh;
   margin: 0 auto;
+  max-width: 500px;
   text-align: center;
   position: relative;
 `
 
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <BackgroundImage>
-      <Link to="/">
-        <StyledLogo />
-      </Link>
-      <Navbar />
-    </BackgroundImage>
+const Header = ({ pathname }) => (
+  <StyledHeader home={pathname}>
+    {pathname ? (
+      <BackgroundImage>
+        <Link to="/" style={{ textAlign: 'center' }}>
+          <StyledLogo />
+        </Link>
+        <Navbar />
+      </BackgroundImage>
+    ) : (
+      <>
+        <Link to="/" style={{ textAlign: 'center' }}>
+          <StyledLogo />
+        </Link>
+        <Navbar />
+      </>
+    )}
   </StyledHeader>
 )
 
