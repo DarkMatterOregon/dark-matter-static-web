@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from './navbar'
 import HeaderLogo from './headerLogo'
 import HeaderBackground from './headerBackground'
-import { elevation } from '../utilities'
+import { elevation, white } from '../utilities'
 import styled, { css } from 'styled-components'
 
 const StyledHeader = styled.header`
@@ -16,12 +16,12 @@ const StyledHeader = styled.header`
   /* height: 100vh; */
   position: relative;
   /* ^^to contain the background image^^ */
-  background-image: linear-gradient(rgba(0,0,0,.4) 0%, transparent 90%, white 100%);
+  background-image: linear-gradient(rgba(0,0,0,.4) 0%, transparent 90%, ${white} 100%);
   
   ${({ home }) =>
     home &&
     css`
-      background-image: radial-gradient(white -50%, transparent 50%);
+      background-image: radial-gradient(${white} -50%, transparent 50%);
       height: 100vh;
       align-content: center;
       grid-template-columns: 1fr;

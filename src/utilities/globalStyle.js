@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { black } from './colors'
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -7,6 +8,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
+  color: ${black};
 
   *, *:before, *:after {
     box-sizing: inherit;
