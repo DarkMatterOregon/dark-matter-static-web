@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components' 
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ClientCard from '../components/clientCard'
@@ -23,7 +23,13 @@ const ClientPage = () => (
               client {
                 company
                 description
-                logo
+                logo {
+                  childImageSharp {
+                    fluid(maxWidth: 630) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 website
               }
             }

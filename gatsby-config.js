@@ -2,6 +2,13 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+var netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+}
+
 module.exports = {
   siteMetadata: {
     title: `Dark Matter Consulting`,
@@ -31,8 +38,25 @@ module.exports = {
         path: `${__dirname}/src/markdown/`,
       },
     },
-    `gatsby-transformer-remark`,
-    'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          netlifyCmsPaths,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 300,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
+    netlifyCmsPaths,
     {
       resolve: `gatsby-source-airtable`,
       options: {

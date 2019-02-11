@@ -28,7 +28,13 @@ const AboutPage = () => (
               crew {
                 bio
                 githubid
-                headshot
+                headshot {
+                  childImageSharp {
+                    fluid(maxWidth: 300) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 title
               }
             }
@@ -37,9 +43,7 @@ const AboutPage = () => (
       `}
       render={data => (
         <div>
-          <div
-            dangerouslySetInnerHTML={{ __html: data.body.html }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: data.body.html }} />
           <CrewCards>
             {data.crew.frontmatter.crew.map(crew => (
               <CrewCard {...crew} key={crew.githubid} />
@@ -50,6 +54,5 @@ const AboutPage = () => (
     />
   </Layout>
 )
-
 
 export default AboutPage

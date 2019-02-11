@@ -1,18 +1,19 @@
 import React from 'react'
-import styled from 'styled-components' 
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
-const CrewCard = (props, {className}) => {
+const CrewCard = ({ title, headshot, githubid, className }) => {
   return (
-    <div className={props.className}>
-      <h2>{props.title}</h2>
-      <img src={props.headshot} alt={props.title} />
-      <p>{props.githubid}</p>
+    <div className={className}>
+      <h2>{title}</h2>
+      <Img fluid={headshot.childImageSharp.fluid} alt={title} />
+      <p>{githubid}</p>
     </div>
   )
 }
 
 const StyledCrewCard = styled(CrewCard)`
-  /* width: 200px; */
+  width: 200px;
 `
 
 export default StyledCrewCard
