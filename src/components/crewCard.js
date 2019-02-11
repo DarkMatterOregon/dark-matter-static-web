@@ -6,14 +6,19 @@ const CrewCard = ({ title, headshot, githubid, className }) => {
   return (
     <div className={className}>
       <h2>{title}</h2>
-      <Img fluid={headshot.childImageSharp.fluid} alt={title} />
+      <Img
+        fixed={headshot.childImageSharp.fixed}
+        alt={title}
+        style={{ width: '100%' }}
+      />
       <p>{githubid}</p>
     </div>
   )
 }
 
 const StyledCrewCard = styled(CrewCard)`
-  width: 200px;
+  margin: 0 auto;
+  width: 100%;
 `
 
 export default StyledCrewCard

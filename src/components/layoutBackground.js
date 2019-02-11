@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import styled, { keyframes, css } from 'styled-components'
+import styled from 'styled-components'
 
 import Img from 'gatsby-image'
 const StyledImg = styled(Img)`

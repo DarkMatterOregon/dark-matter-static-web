@@ -8,6 +8,8 @@ import CrewCard from '../components/crewCard'
 const CrewCards = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 10px;
 `
 
 const AboutPage = () => (
@@ -30,8 +32,8 @@ const AboutPage = () => (
                 githubid
                 headshot {
                   childImageSharp {
-                    fluid(maxWidth: 300) {
-                      ...GatsbyImageSharpFluid
+                    fixed(height: 300) {
+                      ...GatsbyImageSharpFixed
                     }
                   }
                 }

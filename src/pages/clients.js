@@ -7,7 +7,9 @@ import ClientCard from '../components/clientCard'
 
 const Clients = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 10px;
 `
 
 const ClientPage = () => (
@@ -25,8 +27,8 @@ const ClientPage = () => (
                 description
                 logo {
                   childImageSharp {
-                    fluid(maxWidth: 630) {
-                      ...GatsbyImageSharpFluid
+                    fixed(height: 300) {
+                      ...GatsbyImageSharpFixed
                     }
                   }
                 }

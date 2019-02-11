@@ -1,20 +1,36 @@
 import React from 'react'
-import styled from 'styled-components' 
+import styled from 'styled-components'
+import Img from 'gatsby-image'
+import { black, elevation } from '../utilities'
 
-const ClientCard = (props, {className}) => {
+const ClientCard = ({ className, website, company, logo, description }) => {
   return (
-    <div className={props.className}>
-      <a href={props.website}>
-        <h2>{props.company}</h2>
-        <img src={props.logo} alt={props.company} />
+    <div className={className}>
+      <a href={website}>
+        <h2>{company}</h2>
+        <Img
+          fixed={logo.childImageSharp.fixed}
+          alt={company}
+          style={{ width: '100%' }}
+        />
       </a>
-      <p>{props.description}</p>
+      <p>{description}</p>
     </div>
   )
 }
 
 const StyledClientCard = styled(ClientCard)`
-  /* width: 200px; */
+  margin: 0 auto;
+  width: 100%;
+  transition: 0.2s;
+  :hover {
+    ${elevation[2]};
+    transform: translate(0, -2px);
+  }
+
+  a {
+    color: ${black};
+  }
 `
 
 export default StyledClientCard
