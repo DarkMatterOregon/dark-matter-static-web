@@ -2,25 +2,26 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Navbar from './navbar'
 import HeaderLogo from './headerLogo'
-import BackgroundImage from './backgroundImage'
+import HeaderBackground from './headerBackground'
 import { elevation } from '../utilities'
 import styled, { css } from 'styled-components'
 
 const StyledHeader = styled.header`
   display: grid;
-  justify-content: space-around;
-  grid-template-columns: 1fr 4fr;
-
-  ${elevation[2]};
+  justify-content: center;
+  grid-template-columns: 200px auto;
+  
+  /* ${elevation[2]}; */
   align-items: end;
   /* height: 100vh; */
   position: relative;
   /* ^^to contain the background image^^ */
-  background-image: radial-gradient(white -50%, transparent 50%);
-
+  background-image: linear-gradient(rgba(0,0,0,.4) 0%, transparent 90%, white 100%);
+  
   ${({ home }) =>
     home &&
     css`
+      background-image: radial-gradient(white -50%, transparent 50%);
       height: 100vh;
       align-content: center;
       grid-template-columns: 1fr;
@@ -33,7 +34,7 @@ const StyledHeader = styled.header`
     `}
 `
 const StyledLogo = styled(HeaderLogo)`
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: 500px;
   text-align: center;
   position: relative;
@@ -42,12 +43,12 @@ const StyledLogo = styled(HeaderLogo)`
 const Header = ({ pathname }) => (
   <StyledHeader home={pathname}>
     {pathname ? (
-      <BackgroundImage>
+      <HeaderBackground>
         <Link to="/" style={{ textAlign: 'center' }}>
           <StyledLogo />
         </Link>
         <Navbar />
-      </BackgroundImage>
+      </HeaderBackground>
     ) : (
       <>
         <Link to="/" style={{ textAlign: 'center' }}>

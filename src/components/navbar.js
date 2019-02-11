@@ -28,14 +28,19 @@ const StyledLink = styled(Link)`
   padding: 0.3rem;
 
   &:hover,
-  &:active {
-    background: #ffaa33aa;
-    border-radius: 3px;
+  &:active,
+  &.active {
+    background: radial-gradient(
+      rgba(255, 255, 255, 1) 10%,
+      rgba(0, 0, 0, 0) 80%
+    );
   }
 `
 const ListLink = props => (
   <NavLi>
-    <StyledLink to={props.to}>{props.children}</StyledLink>
+    <StyledLink to={props.to} activeClassName="active">
+      {props.children}
+    </StyledLink>
   </NavLi>
 )
 
