@@ -30,13 +30,6 @@ const AboutPage = () => (
               crew {
                 bio
                 githubid
-                headshot {
-                  childImageSharp {
-                    fixed(height: 300) {
-                      ...GatsbyImageSharpFixed
-                    }
-                  }
-                }
                 title
               }
             }

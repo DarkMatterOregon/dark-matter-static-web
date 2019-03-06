@@ -6,11 +6,13 @@ const CrewCard = ({ title, headshot, githubid, className }) => {
   return (
     <div className={className}>
       <h2>{title}</h2>
-      <Img
-        fixed={headshot.childImageSharp.fixed}
-        alt={title}
-        style={{ width: '100%' }}
-      />
+      {headshot && (
+        <Img
+          fixed={headshot.childImageSharp.fixed}
+          alt={title}
+          style={{ width: '100%' }}
+        />
+      )}
       <p>{githubid}</p>
     </div>
   )

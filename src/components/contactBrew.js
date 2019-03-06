@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Formik, Field, Form } from 'formik'
-import { Transition, animated } from 'react-spring'
-import styled from 'styled-components' 
+import { Transition, animated } from 'react-spring/renderprops'
+import styled from 'styled-components'
 
 const StyledForm = styled(Form)`
   display: grid;
@@ -45,7 +45,6 @@ const StyledForm = styled(Form)`
     }
   }
 `
-
 
 class ContactBrew extends Component {
   render() {
@@ -164,7 +163,9 @@ class TransitionContactBrew extends Component {
                 </animated.div>
               )
             : styles => (
-                <animated.h3 style={{textAlign: 'center', ...styles}}>Talk to you soon!</animated.h3>
+                <animated.h3 style={{ textAlign: 'center', ...styles }}>
+                  Talk to you soon!
+                </animated.h3>
               )
         }
       </Transition>
