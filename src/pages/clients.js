@@ -25,13 +25,7 @@ const ClientPage = () => (
               client {
                 company
                 description
-                logo {
-                  childImageSharp {
-                    fixed(height: 300) {
-                      ...GatsbyImageSharpFixed
-                    }
-                  }
-                }
+
                 website
               }
             }
