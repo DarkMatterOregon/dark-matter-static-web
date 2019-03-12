@@ -28,7 +28,7 @@ const IndexPage = ({ location }) => {
       <hr />
 
       {submitMessage ? (
-        <h3>submitMessage</h3>
+        <h3>{submitMessage}</h3>
       ) : (
         <ContactUs
           setShowForm={setShowForm}

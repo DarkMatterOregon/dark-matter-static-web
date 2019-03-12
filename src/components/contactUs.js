@@ -22,7 +22,7 @@ const ContactUs = ({ setShowForm, setSubmitMessage }) => {
         )).json()
         console.log(response)
         setShowForm(false)
-        setSubmitMessage('Cheers and Talk to you soon!')
+        setSubmitMessage('Thank you!')
       }}
       render={({ touched, errors, isSubmitting, handleSubmit, isValid }) => (
         <StyledForm onSubmit={handleSubmit} onSubmitCapture={handleSubmit}>
