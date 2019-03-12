@@ -1,10 +1,8 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import Navbar from './navbar'
 import HeaderLogo from './headerLogo'
-import HeaderBackground from './headerBackground'
-import { elevation, white, black } from '../utilities'
-import styled, { css } from 'styled-components'
+import { black } from '../utilities'
+import styled from 'styled-components'
 
 const StyledHeader = styled.header`
   display: grid;

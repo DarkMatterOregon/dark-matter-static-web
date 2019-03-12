@@ -1,12 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
-
-const Stacked = styled.div`
-  position: relative;
-`
 
 const StyledLogo = styled(Img)`
   top: 60px;
@@ -38,7 +33,7 @@ const HeaderLogo = ({ className }) => (
         <Img
           className={className}
           fluid={data.logoBackground.childImageSharp.fluid}
-          style={{ width: '100%', position: 'absolute', width: '200px' }}
+          style={{ position: 'absolute', width: '200px' }}
         />
         <StyledLogo fluid={data.logo.childImageSharp.fluid} critical={true} />
       </div>
