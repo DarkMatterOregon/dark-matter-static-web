@@ -1,28 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { black } from '../utilities'
 
 const NavList = styled.ul`
   list-style: none;
   margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 700px;
+  width: auto;
   padding: 0;
-  padding-bottom: 1rem;
   font-family: Montserrat;
-
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
 `
 const NavLi = styled.li`
   display: inline-block;
   margin-right: 1rem;
 `
 const StyledLink = styled(Link)`
-  color: #2b2b2b;
+  color: ${black};
   text-decoration: none;
   transition: 0.3s ease;
   padding: 0.3rem;
