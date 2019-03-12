@@ -8,11 +8,11 @@ const ClientCard = ({ className, website, company, logo, description }) => {
     <div className={className}>
       <a href={website}>
         <h2>{company}</h2>
-        <Img
+        {/* <Img
           fixed={logo.childImageSharp.fixed}
           alt={company}
           style={{ width: '100%' }}
-        />
+        /> */}
       </a>
       <p>{description}</p>
     </div>
