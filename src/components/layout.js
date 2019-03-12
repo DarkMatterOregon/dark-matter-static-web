@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from './header'
 import LayoutBackground from './layoutBackground'
-import { GlobalStyle } from '../utilities'
+import Footer from './footer'
+import { GlobalStyle, white } from '../utilities'
 import styled from 'styled-components'
 
 const StyledLayout = styled.div`
@@ -11,20 +12,19 @@ const StyledLayout = styled.div`
   margin: 20px auto;
   padding: 1rem;
   grid-gap: 1rem;
+  background: ${white}44;
 `
 
 const Layout = ({ children }) => (
   <>
-    <GlobalStyle />
-    <StyledLayout>
-      <Header />
-      <LayoutBackground>
-        <main>{children}</main>
-        <footer>
-          © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </LayoutBackground>
-    </StyledLayout>
+    <LayoutBackground>
+      <GlobalStyle />
+      <StyledLayout>
+        <Header />
+        <main style={{ marginTop: '2rem' }}>{children}</main>
+      </StyledLayout>
+      <Footer />
+    </LayoutBackground>
   </>
 )
 
