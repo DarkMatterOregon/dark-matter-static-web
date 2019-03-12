@@ -16,16 +16,10 @@ html {
 }
 body {
   margin: 0;
-
 }
-
- h1, h2 {
+h1, h2 {
    font-family: Montserrat, sans-serif;
    margin-top: 0;
    padding: .5rem;
- }
-
- a {
- }
-
+}
 `

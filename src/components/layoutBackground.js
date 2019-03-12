@@ -14,7 +14,6 @@ const StyledImg = styled(Img)`
   height: 100%;
   z-index: -2;
   transform-origin: 73% 46%;
-  transform: scale(1.3);
   overflow: visible;
 `
 
@@ -42,6 +41,7 @@ const LayoutBackground = ({ className, children }) => (
             critical={true}
             style={{
               position: 'fixed',
+              width: '100%',
             }}
           />
           {children}

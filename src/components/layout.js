@@ -1,39 +1,29 @@
 import React from 'react'
-
 import Header from './header'
-//import './layout.css'
-import { Spring } from 'react-spring'
 import LayoutBackground from './layoutBackground'
-import { GlobalStyle } from '../utilities'
+import Footer from './footer'
+import { GlobalStyle, white } from '../utilities'
+import styled from 'styled-components'
 
-const Layout = ({ children, pathname }) => (
+const StyledLayout = styled.div`
+  display: grid;
+  grid-template-columns: 200px auto;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 1rem;
+  grid-gap: 1rem;
+  background: ${white}44;
+`
+
+const Layout = ({ children }) => (
   <>
-    <GlobalStyle />
-    {pathname ? (
-      <Spring config="slow" from={{ opacity: 0 }} to={{ opacity: 1 }}>
-        {style => (
-          <div style={style}>
-            <Header pathname={pathname} />
-          </div>
-        )}
-      </Spring>
-    ) : (
-      <Header />
-    )}
     <LayoutBackground>
-      <div
-        style={{
-          margin: `20px auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        {children}
-        <footer>
-          © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <GlobalStyle />
+      <StyledLayout>
+        <Header />
+        <main style={{ marginTop: '2rem' }}>{children}</main>
+      </StyledLayout>
+      <Footer />
     </LayoutBackground>
   </>
 )
