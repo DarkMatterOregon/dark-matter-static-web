@@ -17,8 +17,8 @@ const StyledLayout = styled.div`
 
 const Layout = ({ children }) => (
   <>
+    <GlobalStyle />
     <LayoutBackground>
-      <GlobalStyle />
       <StyledLayout>
         <Header />
         <main style={{ marginTop: '2rem' }}>{children}</main>
