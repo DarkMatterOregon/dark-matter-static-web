@@ -9,7 +9,7 @@ const StyledLogo = styled(Img)`
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255));
   ${below.small`
     top: 17px;
-    left:-20px;
+    left:-10px;
   `}
 `
 const StyledBackground = styled.div`
@@ -21,7 +21,7 @@ const StyledBackground = styled.div`
 `
 const ResponsiveWrap = styled.div`
   ${below.small`
-    width: 150px;
+    width: 110px;
   `}
 `
 
