@@ -2,10 +2,27 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
+import { below } from '../utilities'
 
 const StyledLogo = styled(Img)`
   top: 60px;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255));
+  ${below.small`
+    top: 17px;
+    left:-20px;
+  `}
+`
+const StyledBackground = styled.div`
+  width: 200px;
+  position: absolute;
+  ${below.small`
+  width: 100px;
+`}
+`
+const ResponsiveWrap = styled.div`
+  ${below.small`
+    width: 150px;
+  `}
 `
 
 const HeaderLogo = ({ className }) => (
@@ -29,14 +46,16 @@ const HeaderLogo = ({ className }) => (
       }
     `}
     render={data => (
-      <div>
-        <Img
-          className={className}
-          fluid={data.logoBackground.childImageSharp.fluid}
-          style={{ position: 'absolute', width: '200px' }}
-        />
+      <ResponsiveWrap>
+        <StyledBackground>
+          <Img
+            fluid={data.logoBackground.childImageSharp.fluid}
+            // style={{ position: 'absolute', width: '100px' }}
+          />
+        </StyledBackground>
+
         <StyledLogo fluid={data.logo.childImageSharp.fluid} critical={true} />
-      </div>
+      </ResponsiveWrap>
     )}
   />
 )

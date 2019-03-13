@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './header'
 import LayoutBackground from './layoutBackground'
 import Footer from './footer'
-import { GlobalStyle, white } from '../utilities'
+import { GlobalStyle, white, below } from '../utilities'
 import styled from 'styled-components'
 
 const StyledLayout = styled.div`
@@ -13,6 +13,10 @@ const StyledLayout = styled.div`
   padding: 1rem;
   grid-gap: 1rem;
   background: ${white}44;
+
+  ${below.small`
+    grid-template-columns: auto;
+  `}
 `
 
 const Layout = ({ children }) => (

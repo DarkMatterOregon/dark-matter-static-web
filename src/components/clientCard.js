@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import { black, elevation } from '../utilities'
 
 const ClientCard = ({ className, website, company, logo, description }) => {
