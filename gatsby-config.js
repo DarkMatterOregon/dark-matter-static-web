@@ -3,6 +3,7 @@ module.exports = {
     title: `Dark Matter Consulting`,
     description: `Let's talk about how we can make small batch, craft brewed software for your unique palate`,
     author: `@mckelveygreg`,
+    siteUrl: 'https://darkmatteroregon.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -56,14 +57,15 @@ module.exports = {
         name: `Dark Matter Consulting`,
         short_name: `Dark Matter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fbfcfb`,
+        theme_color: `#070a0e`,
         display: `minimal-ui`,
         icon: `src/images/logoBackground.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
+    `gatsby-plugin-sitemap`,
   ],
 }
