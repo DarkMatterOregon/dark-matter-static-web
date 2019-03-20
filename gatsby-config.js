@@ -52,6 +52,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-136704200-1',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Dark Matter Consulting`,
