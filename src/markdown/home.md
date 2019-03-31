@@ -6,12 +6,13 @@ title: Home Page
 
 ## WHO WE ARE
 
-Eugene’s premier C# & .Net development consultancy. Our founders bring more than 30 years of collective experience in building .NET infrastructure. We’ve worked with industry leaders, state & local governments as well as private enterprise large and small.  Founded in 2016 to fill a gap in regional Microsoft platform knowledge.  We’re growing, drawing additional .NET developers into our sphere of influence.
+Eugene’s premier C# Web, Mobile, and cloud development consultancy. Our founders bring more than 30 years of collective experience in building .NET infrastructure. We’ve worked with industry leaders, state & local governments as well as private enterprise large and small.  Founded in 2016 to fill a gap in regional C# knowledge, we've expanded to more web and mobile using React and pulled more developers into our sphere of influence.
 
 ## WHAT WE DO
 
-We build diverse teams fitted to the specific needs of your project.  Our developers have deep MS platforms knowledge (see Legacy below)  as well as the next versions of the languages and platforms.  We stay up to date on trends so we can give clear and concise direction.  We use this stuff every day.
+We build diverse teams fitted to the specific needs of your project.  Our developers have deep platforms knowledge in C# and .Net to support your existing systems as well as embracing the latest trends in mobile and cloud computing for your next adventure.  We employ local oregon developers and enjoy the quality of live in Eugene, Oregon.  
 
-## WHY C# & .NET?
+## Open Tools and Open Leadership
 
-It’s a great time to be developing in .NET.  All the code you’ve invested in over the years can live on new platforms as part of Microsoft’s adoption of Open Source with the .Net Foundation.  C# is a powerful and concise language that runs on everything from mobile on iOS and Android, to the PC with UWP, to the web and cloud with .NET Core.  There is so much excitement around C# and .NET it’s like a new renaissance for the platform.
+It’s a great time to be developing in open source.  We are agile practitioners and use open tools and open leadership to impliment your project.  Beyond our consultancy, we are civicially enguaged with local open projects and provide leadership as Mozilla Open Leaders.  We use those same tools on your project, making sure it's easy to collaborate and add contributors. It all starts with a conversation, so we'd love to hear from you. 
+
