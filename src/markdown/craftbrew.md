@@ -2,7 +2,7 @@
 title: Craft Brew
 ---
 
-### Dark Matter Consulting can help get your Enterprise Data Warehouse up, operational and providing valuable insight into your business operations the very same day you launch your Microsoft Dynamics 365 for Finance and Operations implementation.
+### Dark Matter Consulting can help get your Enterprise Data Warehouse up, operational and providing valuable insight into your business operations the very same day you launch your new ERP system. We have a great deal of experience with the Microsoft Dynamics family of ERP systems with an emphasis on Dynamics 365 as well as other very large on-premise and cloud based ERP systems in the manufacturing and distribution space.
 
 ---
 
