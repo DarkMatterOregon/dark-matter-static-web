@@ -1,12 +1,16 @@
 ---
 title: Crew
 crew:
-  - bio: has a thing for hats
+  - specialties: has a thing for hats
     githubid: nohorse
     linkedinid: markdavs
     title: Mark Davis
-  - bio: Works across the hall
-    headshot: null
+  - specialties: Works across the hall
+    githubid:
     linkedinid:
     title: Doug Frazier
+  # - specialties:
+  #   githubid:
+  #   linkedinid:
+  #   title:
 ---

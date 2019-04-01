@@ -12,7 +12,7 @@ const CrewCards = styled.div`
   grid-gap: 10px;
 `
 
-const AboutPage = () => {
+const CrewPage = () => {
   const aboutMD = useStaticQuery(graphql`
     {
       body: markdownRemark(frontmatter: { title: { eq: "About" } }) {
@@ -24,8 +24,9 @@ const AboutPage = () => {
       crew: markdownRemark(frontmatter: { title: { eq: "Crew" } }) {
         frontmatter {
           crew {
-            bio
+            specialties
             githubid
+            linkedinid
             title
           }
         }
@@ -34,9 +35,11 @@ const AboutPage = () => {
   `)
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="Crew" />
       <div>
-        <div dangerouslySetInnerHTML={{ __html: aboutMD.body.html }} />
+        {/* <div dangerouslySetInnerHTML={{ __html: aboutMD.body.html }} /> */}
+        <h2>Crew</h2>
+        <hr />
         <CrewCards>
           {aboutMD.crew.frontmatter.crew.map(crew => (
             <CrewCard {...crew} key={crew.githubid} />
@@ -47,4 +50,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default CrewPage
