@@ -6,11 +6,11 @@ title: Home Page
 
 ## WHO WE ARE
 
-Eugene’s premier C#, Web, Mobile, and Cloud development consultancy. Our founders bring more than 30 years of collective experience in building .NET infrastructure. We’ve worked with industry leaders, state & local governments as well as private enterprise large and small.  Founded in 2016 to fill a gap in regional C# knowledge, we've expanded lately to embrase popular trends in open web and mobile as well as adding developers with diverse skill sets. 
+Eugene’s craftiest C#, Web, Mobile, and Cloud development consultancy. Our founders bring more than 30 years of collective experience in building .NET infrastructure. We’ve worked with industry leaders, state & local governments as well as private enterprise large and small.  Founded in 2016 to fill a gap in regional C# knowledge, we've expanded lately to embrace popular trends in open web and mobile as well as adding developers with diverse skill sets. 
 
 ## WHAT WE DO
 
-We build teams custom fitted to the specific needs of your project.  Our developers have deep platform knowledge in C# and .Net to support your existing systems as well as embracing the latest trends in mobile and cloud computing for your next adventure.  We employ local oregon developers and enjoy the quality of live in Eugene, Oregon.
+We build teams custom fitted to the specific needs of your project.  Our developers have deep platform knowledge in C# and .Net to support your existing systems as well as embracing the latest trends in mobile and cloud computing for your next adventure.  We employ local Oregon developers who enjoy the quality of live in Eugene, Oregon.
 
 ## Open Tools and Open Leadership
 
