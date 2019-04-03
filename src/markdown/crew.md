@@ -11,16 +11,20 @@ crew:
     title: Doug Frazier
   - specialties: Programmer of all sorts, web/mobile on MS stack, Data Warehouse/ETL on SQL Server/SSIS, Various ERP systems, MS Dynamics D365. AX. NAV, several others
     githubid: danbillow
-    linkedinid: 
+    linkedinid:
     title: Dan Billow
   - specialties: Software Developer, web and mobile development
     githubid: sgerendasy
-    linkedinid: 
+    linkedinid:
     title: Sam Gerendasy
   - specialties: Software Developer, web and mobile development
     githubid: Ubawesome
-    linkedinid: 
+    linkedinid:
     title: Caleb Frasier
+  - specialties: Web Developer
+    githubid: Mckelveygreg
+    linkedinid:
+    title: Greg McKelvey
   # - specialties:
   #   githubid:
   #   linkedinid:
