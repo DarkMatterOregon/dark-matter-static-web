@@ -21,4 +21,8 @@ crew:
     githubid: Ubawesome
     linkedinid: 
     title: Caleb Frasier
+  # - specialties:
+  #   githubid:
+  #   linkedinid:
+  #   title:
 ---
