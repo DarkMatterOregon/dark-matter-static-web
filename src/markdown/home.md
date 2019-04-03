@@ -12,7 +12,7 @@ Eugene’s craftiest C#, Web, Mobile, and Cloud development consultancy. Our fou
 
 We build teams custom fitted to the specific needs of your project.  Our developers have deep platform knowledge in C# and .Net to support your existing systems as well as embracing the latest trends in mobile and cloud computing for your next adventure.  We employ local Oregon developers who enjoy the quality of live in Eugene, Oregon.
 
-## Open Tools and Open Leadership
+## OPEN TOOLS AND OPEN LEADERSHIP
 
 It’s a great time to be working in open source.  We are agile practitioners and use open tools and open leadership to impliment your project.  Beyond our consultancy, we are civicially engaged with local open projects and provide leadership as Mozilla Open Leaders.  We use those same tools on your project, making sure it's easy to collaborate and add contributors. It all starts with a conversation, so we'd love to hear from you. 
 
