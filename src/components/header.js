@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   filter: drop-shadow(0 0 15px ${black});
   ${below.small`
     grid-template-rows: auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: 4fr 5fr;
     justify-content: space-evenly;
     
   `}

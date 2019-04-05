@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { black } from '../utilities'
+import { white, black } from '../utilities'
 
 const NavList = styled.ul`
   list-style: none;
@@ -13,6 +13,7 @@ const NavList = styled.ul`
   width: auto;
   padding: 0;
   font-family: Montserrat;
+  text-align: center;
 `
 const NavLi = styled.li`
   display: inline-block;
@@ -27,10 +28,12 @@ const StyledLink = styled(Link)`
   &:hover,
   &:active,
   &.active {
-    background: radial-gradient(
-      rgba(255, 255, 255, 1) 10%,
-      rgba(0, 0, 0, 0) 80%
-    );
+    text-decoration: underline;
+  }
+  hr {
+    margin: 0;
+    padding: 0;
+    color: ${black};
   }
 `
 const ListLink = props => (
@@ -49,7 +52,11 @@ const Navbar = () => (
       {/* <ListLink to="/specialties">Specialties</ListLink>
       <ListLink to="/clients">Our Work</ListLink>
       <ListLink to="/media">Media</ListLink> */}
-      <ListLink to="/craftbrew/">Craft Brew Fest</ListLink>
+
+      <ListLink to="/craftbrew/">
+        <hr />
+        Craft Brewery Conference
+      </ListLink>
     </NavList>
   </div>
 )

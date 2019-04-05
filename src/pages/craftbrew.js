@@ -44,10 +44,10 @@ const CraftBrew = () => {
 
   return (
     <Layout>
-      <SEO title="Craft Brew Conference" />
+      <SEO title="Craft Brewery Conference" />
       <div style={{ transition: '.5s ease' }}>
         <h1 style={{ textAlign: 'center', paddingBottom: '1rem' }}>
-          Craft Brew Consulting
+          Craft Brewery Conference
         </h1>
         <div style={{ textAlign: 'center' }}>
           <BeerButton onClick={() => setShowForm(true)}>
@@ -70,9 +70,12 @@ const CraftBrew = () => {
       <div
         dangerouslySetInnerHTML={{ __html: craftbrewMD.markdownRemark.html }}
       />
-      <div>
-       <a href="http://www.glimmer.tech/"> <img src=""/></a> 
-      </div>
+      {/* <div>
+        <a href="http://www.glimmer.tech/">
+          {' '}
+          <img src="" />
+        </a>
+      </div> */}
     </Layout>
   )
 }
