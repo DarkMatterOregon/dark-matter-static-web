@@ -70,6 +70,9 @@ const CraftBrew = () => {
       <div
         dangerouslySetInnerHTML={{ __html: craftbrewMD.markdownRemark.html }}
       />
+      <div>
+       <a href="http://www.glimmer.tech/"> <img src=""/></a> 
+      </div>
     </Layout>
   )
 }
