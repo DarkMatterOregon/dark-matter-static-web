@@ -7,9 +7,10 @@ import CrewCard from '../components/crewCard'
 
 const CrewCards = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 200px);
   text-align: center;
   grid-gap: 10px;
+  justify-content: center;
 `
 
 const CrewPage = () => {
