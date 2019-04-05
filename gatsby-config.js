@@ -73,5 +73,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`,
   ],
 }
