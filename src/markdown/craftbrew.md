@@ -21,3 +21,5 @@ title: Craft Brew
 • SSRS provides the platform to fulfill specific reporting needs and subscription-based reporting delivery from the Enterprise Data Warehouse.
 
 #### These technologies combined with the Data Warehouse and Business Intelligence experience **_Dark Matter Consulting_** brings to the table have contributed to the successful completion of the Brooklyn Brewery BI/DW implementation allowing the team to meet reporting requirements and complete the project **_on time and under budget_**.
+
+[![Glimmer Tech](./GlimmerTechLogoButton.png 'Get the GlimmerXP App!')](http://www.glimmer.tech)
