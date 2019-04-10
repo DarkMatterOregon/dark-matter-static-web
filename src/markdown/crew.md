@@ -9,7 +9,7 @@ crew:
     githubid: mixlplix
     linkedinid: mixlplix
     title: Doug Frazier
-  - specialties: Programmer of all sorts, web/mobile on MS stack, Data Warehouse/ETL on SQL Server/SSIS, Various ERP systems, MS Dynamics D365. AX. NAV, several others
+  - specialties: Programmer web/win/svc/mob on MS stack, Data Warehouse/ETL on SQL Server/SSIS, ERP systems; MS Dynamics D365, AX, NAV, Oracle JDE
     githubid: danbillow
     linkedinid:
     title: Dan Billow
