@@ -48,15 +48,10 @@ const Navbar = () => (
   <div>
     <NavList>
       <ListLink to="/">Home</ListLink>
-      <ListLink to="/crew">Crew</ListLink>
-      {/* <ListLink to="/specialties">Specialties</ListLink>
-      <ListLink to="/clients">Our Work</ListLink>
+      <ListLink to="/work">Our Work</ListLink>
+      <ListLink to="/crew">Our Crew</ListLink>
+      {/*<ListLink to="/clients">Our Work</ListLink>
       <ListLink to="/media">Media</ListLink> */}
-
-      <ListLink to="/craftbrew/">
-        <hr />
-        Craft Brewery Conference
-      </ListLink>
     </NavList>
   </div>
 )
