@@ -7,7 +7,6 @@ import SEO from '../components/seo'
 const SpecialtiesPage = () => (
   <Layout>
     <SEO title="Specialties" keywords={[`gatsby`, `application`, `react`]} />
-    
     <StaticQuery
       query={graphql`
         {

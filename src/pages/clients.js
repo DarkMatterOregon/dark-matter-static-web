@@ -15,7 +15,7 @@ const Clients = styled.div`
 const ClientPage = () => (
   <Layout>
     <SEO title="Our Work" keywords={[`gatsby`, `application`, `react`]} />
-    
+    <h1>The below content is edited with netlify CMS</h1>
     <StaticQuery
       query={graphql`
         {
