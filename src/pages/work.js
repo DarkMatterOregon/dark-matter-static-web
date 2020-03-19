@@ -28,4 +28,4 @@ const SpecialtiesPage = () => (
   </Layout>
 )
 
-export default SpecialtiesPage
+export default WorkPage
