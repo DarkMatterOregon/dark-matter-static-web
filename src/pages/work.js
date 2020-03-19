@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 const WorkPage = () => (
   <Layout>
     <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>The below content is edited with netlify CMS</h1>
+    
     <StaticQuery
       query={graphql`
         {
