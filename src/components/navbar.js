@@ -47,11 +47,13 @@ const ListLink = props => (
 const Navbar = () => (
   <div>
     <NavList>
+      <hr/>
       <ListLink to="/">Home</ListLink>
       <ListLink to="/work">Our Work</ListLink>
       <ListLink to="/crew">Our Crew</ListLink>
       {/*<ListLink to="/clients">Our Work</ListLink>
       <ListLink to="/media">Media</ListLink> */}
+     <hr/>
     </NavList>
   </div>
 )
