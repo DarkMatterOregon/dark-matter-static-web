@@ -14,6 +14,7 @@
     "formik": "^1.5.1",
     "gatsby": "^2.2.3",
     "gatsby-background-image": "^0.2.42",
+    "gatsby-cli": "^2.10.13",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-manifest": "^2.0.22",
