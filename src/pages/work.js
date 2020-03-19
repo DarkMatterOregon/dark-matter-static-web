@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const SpecialtiesPage = () => (
+const WorkPage = () => (
   <Layout>
     <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
     <h1>The below content is edited with netlify CMS</h1>
