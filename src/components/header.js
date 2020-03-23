@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from './navbar'
-import HeaderLogo from './headerLogo'
-import { black, below } from '../utilities'
 import styled from 'styled-components'
+import { below, black } from '../utilities'
+import HeaderLogo from './headerLogo'
+import Navbar from './navbar'
 
 const StyledHeader = styled.header`
   display: grid;
   grid-template-rows: 220px auto;
+  grid-template-columns: 100%;
   justify-content: center;
   width: 100%;
   filter: drop-shadow(0 0 15px ${black});
