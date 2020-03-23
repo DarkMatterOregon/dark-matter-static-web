@@ -23,7 +23,7 @@ export async function handler(event) {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: 'Apparently this saved to airtable...',
+        message: 'Saved to airtable...',
       }),
     }
   } catch (error) {
