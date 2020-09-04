@@ -8,7 +8,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "airtable": "^0.5.9",
+    "airtable": "^0.7.2",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^6.2.0",
     "formik": "^1.5.1",
